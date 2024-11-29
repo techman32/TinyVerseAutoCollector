@@ -31,7 +31,7 @@ const collect = async (baseUrl, collectUri, sessionParam) => {
         }
     }).then(response => {
         if (response.data.response.success) {
-            console.log(`Собрано ${response.data.response.dust} пыли`)
+            console.log(`[${new Date().toLocaleString('ru-RU')}] Собрано ${response.data.response.dust} пыли`)
         }
     })
 }
